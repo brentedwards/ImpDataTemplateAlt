@@ -1,0 +1,32 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:ImpDataConverterAlt_Converters="clr-namespace:ImpDataConverterAlt.Converters" x:Class="ImpDataConverterAlt.MainPage"
+	mc:Ignorable="d"
+	d:DesignHeight="300" d:DesignWidth="400"
+	>
+
+	<UserControl.Resources>
+		<ImpDataConverterAlt_Converters:ProductConverter x:Key="ProductConverter"/>
+		<DataTemplate x:Key="ProductItemTemplate">
+			<Grid>
+				<TextBlock TextWrapping="Wrap" Text="{Binding Name, Mode=OneWay}" d:LayoutOverrides="Width, Height"/>
+			</Grid>
+		</DataTemplate>
+	</UserControl.Resources>
+	<UserControl.DataContext>
+		<Binding Path="Main" Source="{StaticResource Locator}"/>
+	</UserControl.DataContext>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<ListBox Margin="0" ItemsSource="{Binding Products}" SelectedItem="{Binding SelectedProduct, Mode=TwoWay}" ItemTemplate="{StaticResource ProductItemTemplate}"/>
+		<ContentControl Content="{Binding SelectedProduct, Converter={StaticResource ProductConverter}, Mode=TwoWay}" Grid.Column="1"/>
+
+	</Grid>
+</UserControl>

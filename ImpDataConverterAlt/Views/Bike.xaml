@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ImpDataConverterAlt.Views.Bike"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="Auto"/>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Bike" d:LayoutOverrides="Height" Grid.ColumnSpan="2" FontWeight="Bold" FontSize="16"/>
+    	<TextBlock HorizontalAlignment="Right" Margin="0,0,10,10" TextWrapping="Wrap" Text="Manufacturer:" d:LayoutOverrides="Height" Grid.Row="1"/>
+    	<TextBlock HorizontalAlignment="Right" Margin="0,0,10,10" TextWrapping="Wrap" Text="Model:" d:LayoutOverrides="Height" Grid.Row="2"/>
+    	<TextBlock HorizontalAlignment="Right" Margin="0,0,10,10" TextWrapping="Wrap" Text="Type:" d:LayoutOverrides="Height" Grid.Row="3"/>
+    	<TextBlock HorizontalAlignment="Right" Margin="0,0,10,10" TextWrapping="Wrap" Text="Number of Gears:" d:LayoutOverrides="Height" Grid.Row="4"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="0,0,0,8" TextWrapping="Wrap" Text="{Binding Manufacturer}" d:LayoutOverrides="Height" Grid.Row="1" Grid.Column="1"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="0,0,0,8" TextWrapping="Wrap" Text="{Binding Model}" d:LayoutOverrides="Height" Grid.Row="2" Grid.Column="1"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="0,0,0,8" TextWrapping="Wrap" Text="{Binding Type}" d:LayoutOverrides="Height" Grid.Row="3" Grid.Column="1"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="0,0,0,8" TextWrapping="Wrap" Text="{Binding NumberOfGears}" d:LayoutOverrides="Height" Grid.Row="4" Grid.Column="1"/>
+
+    </Grid>
+</UserControl>

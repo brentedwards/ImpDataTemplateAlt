@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpDataConverterAlt", "ImpDataConverterAlt\ImpDataConverterAlt.csproj", "{340E551F-D9DC-4874-8942-DB00CAD4F2C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImpDataConverterAlt.Web", "ImpDataConverterAlt.Web\ImpDataConverterAlt.Web.csproj", "{1F1EBE95-D670-41E7-97CD-B40FEA7574A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{340E551F-D9DC-4874-8942-DB00CAD4F2C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340E551F-D9DC-4874-8942-DB00CAD4F2C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340E551F-D9DC-4874-8942-DB00CAD4F2C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340E551F-D9DC-4874-8942-DB00CAD4F2C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F1EBE95-D670-41E7-97CD-B40FEA7574A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EBE95-D670-41E7-97CD-B40FEA7574A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EBE95-D670-41E7-97CD-B40FEA7574A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1EBE95-D670-41E7-97CD-B40FEA7574A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
